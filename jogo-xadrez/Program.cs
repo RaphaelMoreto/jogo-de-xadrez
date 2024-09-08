@@ -1,5 +1,6 @@
 ﻿using System;
 using tabuleiro;
+using xadrez;
 
 namespace jogo_xadrez
 {
@@ -7,9 +8,19 @@ namespace jogo_xadrez
     {
         static void Main(string[] args)
         {
-            Tabuleiro tab = new Tabuleiro(8, 8);
+            try
+            {
+                Tabuleiro tab = new Tabuleiro(8, 8);
 
-            Tela.imprimirTabuleiro(tab);
+                tab.colocarPeca(new Torre(tab, Cor.Amarelo), new Posicao(0, 0));
+                tab.colocarPeca(new Rei(tab, Cor.Amarelo), new Posicao(0, 3));
+
+                Tela.imprimirTabuleiro(tab);
+            }
+            catch (TabuleiroException e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }

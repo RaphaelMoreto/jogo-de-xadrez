@@ -15,6 +15,8 @@ namespace jogo_xadrez
                 tab.colocarPeca(new Torre(tab, Cor.Amarelo), new Posicao(0, 0));
                 tab.colocarPeca(new Rei(tab, Cor.Amarelo), new Posicao(0, 3));
 
+                tab.colocarPeca(new Torre(tab, Cor.Branca), new Posicao(3, 5));
+
                 Tela.imprimirTabuleiro(tab);
             }
             catch (TabuleiroException e)

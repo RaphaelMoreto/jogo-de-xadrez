@@ -20,14 +20,14 @@ namespace xadrez
             jogadorAtual = Cor.Branca;
             colocarPecas();
         }
-        /*
-        public void execultaMovimento(Peca origem, Peca destino)
+        
+        public void execultaMovimento(Posicao origem, Posicao destino)
         {
             Peca p = tab.retirarPeca(origem);
             p.incrementarMovimento();
             Peca pecaCapturada = tab.retirarPeca(destino);
             tab.colocarPeca(p, destino);
-        }*/
+        }
 
         private void colocarPecas()
         {

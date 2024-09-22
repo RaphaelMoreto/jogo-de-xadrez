@@ -25,7 +25,7 @@ namespace jogo_xadrez
                     Console.Write("DESTINO: ");
                     Posicao destino = Tela.lerPosicaoXadrez().toPosicao();
 
-                    //partida.execultaMovimento(origem, destino);
+                    partida.execultaMovimento(origem, destino);
                 }
             }
             catch (TabuleiroException e)

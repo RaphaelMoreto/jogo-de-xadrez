@@ -47,7 +47,7 @@ namespace jogo_xadrez
                     }
                 }
             }
-            catch (TabuleiroException e)
+            catch(TabuleiroException e)
             {
                 Console.WriteLine(e.Message);
             }

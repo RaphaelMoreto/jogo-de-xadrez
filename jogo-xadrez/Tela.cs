@@ -18,11 +18,20 @@ namespace jogo_xadrez
             Console.WriteLine();
 
             Console.WriteLine("TURNO: " + partida.turno);
-            Console.WriteLine("AGUADANDO JOGADA: " + partida.jogadorAtual);
 
-            if(partida.xeque)
+            if (!partida.terminada)
             {
-                Console.WriteLine("XEQUE!");
+                Console.WriteLine("AGUADANDO JOGADA: " + partida.jogadorAtual);
+
+                if (partida.xeque)
+                {
+                    Console.WriteLine("XEQUE!");
+                }
+            }
+            else
+            {
+                Console.WriteLine("XEQUEMATE!");
+                Console.WriteLine("VENCEDOR " + partida.jogadorAtual);
             }
         }
 

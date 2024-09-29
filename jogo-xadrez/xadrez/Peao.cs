@@ -2,7 +2,7 @@
 using tabuleiro;
 using xadrez;
 
-namespace jogo_xadrez.xadrez
+namespace xadrez
 {
     internal class Peao : Peca
     {
